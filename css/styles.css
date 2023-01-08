@@ -9,17 +9,18 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
+  --background-white: #f5f5f5;
+  --background-grey: #f5f4fa;
 }
 /* Загальне оформлення для сторінки */
 body {
   background-color: var(--basic-white);
   color: var(--primary-text-color);
 
-  background-color: #f5f5f5;
+  background-color: var(--background-white);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
   font-size: 16px;
-  line-height: 1.2;
 }
 
 ul {
@@ -27,16 +28,22 @@ ul {
 }
 
 .logo {
-  color: var(--title-text-color);
+  color: var(--accent-color);
   text-decoration-line: none;
   font-family: Raleway;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
-.logo .logo-color {
-  color: var(--accent-color);
+
+.logo-dark {
+  color: var(--title-text-color);
 }
+
+.logo-light {
+  color: var(--basic-white);
+}
+
 /* Site nav */
 .site-nav .link {
   color: var(--title-text-color);
@@ -57,12 +64,14 @@ ul {
 }
 
 /* contacts */
+address {
+  font-style: normal;
+}
 .phone,
 .mail,
 .location {
   color: var(--primary-text-color);
   text-decoration: none;
-  font-style: normal;
   font-size: 14px;
   line-height: 1.7;
 }
@@ -95,12 +104,12 @@ ul {
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
+  text-transform: uppercase;
 }
 
 /* Section */
 .section-title {
   color: var(--title-text-color);
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
@@ -111,7 +120,6 @@ ul {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-transform: uppercase;
 }
 .section .text {
   font-size: 14px;
@@ -123,6 +131,15 @@ ul {
   text-decoration: none;
 }
 
+.project-title {
+  color: var(--title-text-color);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.project-text {
+  line-height: 1.9;
+}
 /* Стилізація сторінки Портіоліо */
 /* Кнопки */
 .button {
@@ -142,7 +159,7 @@ ul {
 }
 
 .buttons-list .button {
-  background-color: #f5f4fa;
+  background-color: var(--background-grey);
   line-height: 1.6;
   letter-spacing: inherit;
 }
